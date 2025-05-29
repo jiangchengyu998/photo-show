@@ -1,5 +1,6 @@
 import '@/styles/index.cases.css'
 import '@/styles/common.css'
+import Link from "next/link";
 
 
 
@@ -26,7 +27,10 @@ export default function Cases() {
                       </div>
                   </div>
                   <div className="group_6 flex-col justify-between">
-                      <div className="group_7 flex-col"/>
+
+                      <Link href={"/cases/1"}>
+                          <div className="group_7 flex-col"/>
+                      </Link>
                       <div className="group_8 flex-col"/>
                   </div>
                   <div className="group_9 flex-col justify-between">

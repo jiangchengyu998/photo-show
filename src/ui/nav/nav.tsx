@@ -14,11 +14,17 @@ export default function Nav() {
     }, [pathname])
 
     // 红条位置映射：根据导航项宽度和顺序设置
-    const indicatorLeftMap: Record<string, string> = {
-        '/': '479px',
-        '/cases': '693px',
-        '/about': '906px',
-    }
+    // const indicatorLeftMap: Record<string, string> = {
+    //     '/': '479px',
+    //     '/cases': '683px',
+    //     '/about': '906px',
+    // }
+    const getIndicatorLeft = (path: string): string => {
+        if (path.startsWith('/cases')) return '683px';
+        if (path.startsWith('/about')) return '906px';
+        return '479px'; // 默认首页
+    };
+
 
     const handleNavClick = (path: string) => {
         setActivePath(path)
@@ -51,7 +57,7 @@ export default function Nav() {
                 </span>
             </div>
             <div className="box_7"
-                 style={{ marginLeft: indicatorLeftMap[activePath] || '0px' }}>
+                 style={{ marginLeft: getIndicatorLeft(activePath) || '0px' }}>
                 <div className="group_2"/>
             </div>
         </div>
