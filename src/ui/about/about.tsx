@@ -4,7 +4,6 @@ import '@/styles/common.about.css'
 export default function About() {
     return (
         <div className="page flex-col">
-            <div className="box_2 flex-col">
                 <div className="text-wrapper_2 flex-col">
                     <span className="text_4">一言家庭摄影</span>
                     <span className="text_5">光影之间，定格家的幸福，让镜头成为家庭爱的见证者</span>
@@ -41,7 +40,6 @@ export default function About() {
             微信公众号/小程序：[请根据实际情况填写]
             <br/>
           </span>
-            </div>
         </div>
     )
 }
