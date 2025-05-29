@@ -1,4 +1,4 @@
-.group_1 {
+.nav_parent {
     height: 68px;
     background: url(https://lanhu-oss-2537-2.lanhuapp.com/FigmaDDSSlicePNG10e81f67622254e39025b7bbf13bc02c.png)
     100% no-repeat;
@@ -6,27 +6,27 @@
     width: 1440px;
 }
 
-.text-wrapper_4 {
+.nav_box {
     width: 481px;
     height: 25px;
     margin: 23px 0 0 480px;
 }
 
 
-.text_1 {
+.nav_root {
     width: 36px;
     height: 25px;
     overflow-wrap: break-word;
     color: rgba(0, 0, 0, 1);
     font-size: 18px;
-    font-family: PingFang SC-Semibold;
+    font-family: PingFang SC-Semibold, serif;
     font-weight: 600;
     text-align: left;
     white-space: nowrap;
     line-height: 18px;
 }
 
-.text_2 {
+.nav_cases {
     width: 72px;
     height: 25px;
     overflow-wrap: break-word;
@@ -40,7 +40,7 @@
     margin-left: 151px;
 }
 
-.text_3 {
+.nav_about {
     width: 72px;
     height: 25px;
     overflow-wrap: break-word;

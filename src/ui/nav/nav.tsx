@@ -26,28 +26,28 @@ export default function Nav() {
     }
 
     return (
-        <div className="group_1 flex-col justify-end">
-            <div className="text-wrapper_4 flex-row justify-between">
+        <div className="nav_parent flex-col justify-end">
+            <div className="nav_box flex-row justify-between">
                 <span
-                    className="text_1"
+                    className="nav_root"
                     onClick={() => handleNavClick('/')}
                     style={{cursor: 'pointer'}}
                 >
                   首页
                 </span>
                 <span
-                    className="text_2"
+                    className="nav_cases"
                     onClick={() => handleNavClick('/cases')}
                     style={{cursor: 'pointer'}}
                 >
-                客户案例
+                 客户案例
                 </span>
                 <span
-                    className="text_3"
+                    className="nav_about"
                     onClick={() => handleNavClick('/about')}
                     style={{cursor: 'pointer'}}
                 >
-                关于我们
+                 关于我们
                 </span>
             </div>
             <div className="box_7"

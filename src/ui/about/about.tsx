@@ -4,10 +4,10 @@ import '@/styles/common.css'
 export default function About() {
     return (
         <div className="page flex-col">
-                <div className="text-wrapper_2 flex-col">
-                    <span className="text_4">一言家庭摄影</span>
-                    <span className="text_5">光影之间，定格家的幸福，让镜头成为家庭爱的见证者</span>
-                </div>
+            <div className="text-wrapper_2 flex-col">
+                <span className="text_4">一言家庭摄影</span>
+                <span className="text_5">光影之间，定格家的幸福，让镜头成为家庭爱的见证者</span>
+            </div>
                 <span className="paragraph_1">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在快节奏的生活当中，我们总希望有些东西能够慢下来，让时间停留片刻。【温馨记忆】家庭摄影工作室正是这样一个地方——它不仅仅是一个拍照的空间，更是每个家庭故事开始的地方。自成立以来，我们致力于捕捉每一个家庭成员之间最真实、最自然的情感交流瞬间，通过镜头记录下爱与成长的故事。
             <br/>
