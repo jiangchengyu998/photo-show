@@ -1,5 +1,5 @@
 import '@/styles/index.about.css'
-import '@/styles/common.about.css'
+import '@/styles/common.css'
 
 export default function About() {
     return (

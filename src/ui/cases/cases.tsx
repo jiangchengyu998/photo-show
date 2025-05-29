@@ -1,5 +1,5 @@
 import '@/styles/index.cases.css'
-import '@/styles/common.cases.css'
+import '@/styles/common.css'
 
 
 

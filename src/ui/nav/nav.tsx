@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import '@/styles/index.nav.css'
-import '@/styles/common.home.css'
+import '@/styles/common.css'
 
 export default function Nav() {
     const pathname = usePathname()

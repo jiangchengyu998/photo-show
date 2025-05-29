@@ -1,5 +1,5 @@
 import '@/styles/index.home.css'
-import '@/styles/common.home.css'
+import '@/styles/common.css'
 
 export default function Home() {
     return (
