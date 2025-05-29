@@ -1,0 +1,131 @@
+.page {
+    background-color: rgba(255, 255, 255, 1);
+    position: relative;
+    width: 1440px;
+    height: 1176px;
+    overflow: hidden;
+}
+
+.box_1 {
+    height: 68px;
+    background: url(https://lanhu-oss-2537-2.lanhuapp.com/FigmaDDSSlicePNG10e81f67622254e39025b7bbf13bc02c.png) 100%
+    no-repeat;
+    background-size: 100% 100%;
+    width: 1440px;
+}
+
+.text-wrapper_1 {
+    width: 463px;
+    height: 25px;
+    margin: 23px 0 0 480px;
+}
+
+.text_1 {
+    width: 36px;
+    height: 25px;
+    overflow-wrap: break-word;
+    color: rgba(0, 0, 0, 1);
+    font-size: 18px;
+    font-family: PingFang SC-Regular;
+    font-weight: normal;
+    text-align: left;
+    white-space: nowrap;
+    line-height: 18px;
+}
+
+.text_2 {
+    width: 72px;
+    height: 25px;
+    overflow-wrap: break-word;
+    color: rgba(0, 0, 0, 1);
+    font-size: 18px;
+    font-family: PingFang SC-Regular;
+    font-weight: normal;
+    text-align: left;
+    white-space: nowrap;
+    line-height: 18px;
+    margin-left: 151px;
+}
+
+.text_3 {
+    width: 72px;
+    height: 25px;
+    overflow-wrap: break-word;
+    color: rgba(0, 0, 0, 1);
+    font-size: 18px;
+    font-family: PingFang SC-Semibold;
+    font-weight: 600;
+    text-align: left;
+    white-space: nowrap;
+    line-height: 18px;
+    margin-left: 132px;
+}
+
+.block_1 {
+    width: 38px;
+    height: 4px;
+    margin: 16px 0 0 888px;
+}
+
+.section_1 {
+    background-color: rgba(255, 0, 0, 1);
+    width: 38px;
+    height: 4px;
+}
+
+.box_2 {
+    background-color: rgba(255, 255, 255, 1);
+    width: 1440px;
+    height: 1109px;
+    margin-bottom: 1px;
+}
+
+.text-wrapper_2 {
+    width: 960px;
+    height: 300px;
+    background: url(https://lanhu-oss-2537-2.lanhuapp.com/FigmaDDSSlicePNG358b095cc38b3c45c550194e3bee7226.png) 100%
+    no-repeat;
+    background-size: 100% 100%;
+    justify-content: flex-center;
+    margin: 32px 0 0 240px;
+}
+
+.text_4 {
+    width: 228px;
+    height: 53px;
+    overflow-wrap: break-word;
+    color: rgba(255, 255, 255, 1);
+    font-size: 38px;
+    font-family: PingFang SC-Semibold;
+    font-weight: 600;
+    text-align: left;
+    white-space: nowrap;
+    line-height: 38px;
+    margin: 100px 0 0 366px;
+}
+
+.text_5 {
+    width: 432px;
+    height: 25px;
+    overflow-wrap: break-word;
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-family: PingFang SC-Regular;
+    font-weight: normal;
+    text-align: left;
+    white-space: nowrap;
+    line-height: 18px;
+    margin: 23px 0 99px 264px;
+}
+
+.paragraph_1 {
+    width: 960px;
+    height: 682px;
+    overflow-wrap: break-word;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 18px;
+    font-family: Inter-Medium;
+    font-weight: 500;
+    text-align: left;
+    margin: 32px 0 63px 240px;
+}

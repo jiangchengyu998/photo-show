@@ -1,5 +1,5 @@
-import '@/styles/index.css'
-import '@/styles/common.css'
+import '@/styles/index.nav.css'
+import '@/styles/common.nav.css'
 export default function Nav() {
   return (
       // <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-2 pb-20 gap-16 sm:p-8 font-[family-name:var(--font-geist-sans)]">

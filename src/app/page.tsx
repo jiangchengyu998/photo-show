@@ -1,5 +1,5 @@
-import '@/styles/index.css'
-import '@/styles/common.css'
+import '@/styles/index.nav.css'
+import '@/styles/common.nav.css'
 
 export default function Home() {
   return (
