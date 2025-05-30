@@ -1,11 +1,12 @@
 import CasesDetail from "@/ui/cases/casesDetail";
 
-export default function Page({ params }: { params: { slug: string } }) {
-    const { slug } = params;
+export default async function Page({params}: { params: { slug: string } }) {
+    const {slug} = await params;
 
     return (
         <div>
-            <CasesDetail slug={slug} />
+            <CasesDetail slug={slug}></CasesDetail>
         </div>
     );
 }
+

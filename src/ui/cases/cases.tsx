@@ -2,12 +2,10 @@ import '@/styles/index.cases.css'
 import '@/styles/common.css'
 import Link from "next/link";
 
-
-
 export default function Cases() {
   return (
       <div className="page flex-col">
-          {/*<div className="block_2 flex-col">*/}
+          <div className="cases_box1 flex-col">
               <div className="box_8 flex-row">
                   <div className="group_5 flex-col justify-between">
                       <div className="text-wrapper_2 flex-col">
@@ -42,7 +40,7 @@ export default function Cases() {
                   <div className="box_10 flex-col"/>
                   <div className="box_71 flex-col"/>
               </div>
-          {/*</div>*/}
+          </div>
       </div>
   );
 }
