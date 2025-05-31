@@ -1,6 +1,5 @@
 import '@/styles/index.casesDetail.css'
 import '@/styles/common.css'
-import Image from "next/image";
 
 type CasesDetailProps = {
     slug: string;
