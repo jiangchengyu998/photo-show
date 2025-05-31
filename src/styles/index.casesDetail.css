@@ -1,31 +1,3 @@
-.box_1 {
-    height: 68px;
-    background: url(https://lanhu-oss-2537-2.lanhuapp.com/FigmaDDSSlicePNG10e81f67622254e39025b7bbf13bc02c.png) 100%
-    no-repeat;
-    background-size: 100% 100%;
-    width: 1440px;
-}
-
-.text-wrapper_1 {
-    width: 481px;
-    height: 25px;
-    margin: 23px 0 0 480px;
-}
-
-
-
-.block_1 {
-    width: 38px;
-    height: 4px;
-    margin: 16px 0 0 479px;
-}
-
-.group_1 {
-    background-color: rgba(255, 0, 0, 1);
-    width: 38px;
-    height: 4px;
-}
-
 .box_detail {
     width: 1440px;
     /*height: 2069px;*/
@@ -66,16 +38,3 @@
     margin: 32px 0 0 240px;
 }
 
-.block_3 {
-    background-color: rgba(217, 217, 217, 1);
-    width: 960px;
-    height: 588px;
-    margin: 20px 0 0 240px;
-}
-
-.block_4 {
-    background-color: rgba(217, 217, 217, 1);
-    width: 960px;
-    height: 588px;
-    margin: 20px 0 146px 240px;
-}
