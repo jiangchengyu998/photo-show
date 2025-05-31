@@ -34,7 +34,6 @@ export default function Cases() {
                     <div className="cases_content_box"/>
                     <div className="cases_content_box"/>
                     <div className="cases_content_box"/>
-                    <div className="cases_content_box"/>
                 </div>
             </div>
         </div>

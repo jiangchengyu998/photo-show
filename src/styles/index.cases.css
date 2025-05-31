@@ -29,6 +29,7 @@
     width: 1440px;
     min-height: 1100px; /* 设置最小高度为1200px */
     margin-bottom: 1px;
+    margin-top: 32px;
 }
 
 
@@ -36,7 +37,7 @@
     /*width: 1200px;*/
     width: 220px;
     height: 580px;
-    margin: 32px 0 0 120px;
+    margin: 0px 0 0 120px;
 }
 
 .group_5 {
@@ -185,7 +186,6 @@
     width: 980px;
     height: 580px;
     gap: 20px; /* 行间距、列间距都一致 */
-    margin-top: 12px;
 }
 
 .cases_content_box {
