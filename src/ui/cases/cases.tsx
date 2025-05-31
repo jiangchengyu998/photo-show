@@ -31,7 +31,7 @@ export default function Cases() {
                                 onClick={() => setSelectedCategoryId(cat.id)}
                                 className={`text-wrapper_3 flex-col cursor-pointer ${selectedCategoryId === cat.id ? 'active' : ''}`}
                             >
-                                <span className={`text_5`}>{cat.name}</span>
+                                <span className={`text_5 ${selectedCategoryId === cat.id ? 'active' : ''}`}>{cat.name}</span>
                             </div>
                         ))}
                     </div>
