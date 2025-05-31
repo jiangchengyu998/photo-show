@@ -27,12 +27,14 @@
 
 .cases_box1 {
     width: 1440px;
-    height: 1207px;
+    min-height: 1100px; /* 设置最小高度为1200px */
     margin-bottom: 1px;
 }
 
-.box_8 {
-    width: 1200px;
+
+.cat_nav {
+    /*width: 1200px;*/
+    width: 220px;
     height: 580px;
     margin: 32px 0 0 120px;
 }
@@ -87,7 +89,7 @@
     margin: 15px 0 0 53px;
 }
 
-.text-wrapper_41 {
+.text-wrapper_4 {
     background-color: rgba(255, 255, 255, 1);
     border-radius: 100px;
     height: 48px;
@@ -177,17 +179,29 @@
     margin-top: 20px;
 }
 
-.group_9 {
-    width: 480px;
+.cases_content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 980px;
     height: 580px;
-    margin-left: 20px;
+    gap: 20px; /* 行间距、列间距都一致 */
+    margin-top: 12px;
 }
 
-.group_21 {
+.cases_content_box {
+    background-color: rgba(196, 196, 196, 1);
+    border-radius: 20px;
+    width: calc(50% - 10px); /* 两个之间的gap是一共20px，左右各减10px */
+    height: 280px;
+}
+
+.cases_content_box_2 {
     background-color: rgba(196, 196, 196, 1);
     border-radius: 20px;
     width: 480px;
     height: 280px;
+    margin-top: 20px;
+    margin-left: 10px;
 }
 
 .group_3 {
@@ -199,9 +213,10 @@
 }
 
 .box_9 {
+    background-color: rgb(159, 17, 17);
     width: 980px;
     height: 280px;
-    margin: 20px 0 197px 340px;
+    margin: 0 0 0 0;
 }
 
 .box_10 {
