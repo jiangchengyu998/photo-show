@@ -1,8 +1,7 @@
 export default function Footer() {
   return (
     <div >
-      <h1>About Page</h1>
-      <p>Welcome to the Footer page!</p>
+      <p>powered by 云朵视界@2025 &nbsp;&nbsp;&nbsp; 备案号：xxxxxx</p>
     </div>
   );
 }

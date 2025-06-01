@@ -5,13 +5,13 @@ import Image from 'next/image'
 export default function Home() {
     //  获取首页的图片
     const images = [
-        '/images/home-page.png',
-        'https://lanhu-oss-2537-2.lanhuapp.com/FigmaDDSSlicePNG03d07f11580c6438a03e626fedb51c43.png',
-        'https://lanhu-oss-2537-2.lanhuapp.com/FigmaDDSSlicePNG03d07f11580c6438a03e626fedb51c43.png',
-        '/images/home-page-below.png',
-        '/images/home-page-below.png',
-        '/images/home-page-below.png',
-        '/images/home-page-below.png',
+        '/images/home/轮播图.png',
+        '/images/home/1.png',
+        '/images/home/2.png',
+        '/images/home/3.png',
+        '/images/home/4.png',
+        '/images/home/5.png',
+        '/images/home/6.png',
     ];
 
     const infos = [
@@ -22,7 +22,7 @@ export default function Home() {
         },
         {
             title: '微信',
-            content: 'JChengYu',
+            content: '一言家庭摄影',
             image: '/images/home-page.png',
         },
         {
@@ -82,15 +82,15 @@ export default function Home() {
                 <span className="text_7">让照片讲述你们的故事，让回忆永远鲜活</span>
             </div>
             <div className="box_12 flex-row justify-between">
-                <Image width={590} height={340} src={images[1]} alt="image_1"/>
-                <Image width={590} height={340} src={images[2]} alt="image_1"/>
+                <Image style={{borderRadius: '20px'}} width={590} height={340} src={images[1]} alt="image_1"/>
+                <Image style={{borderRadius: '20px'}} width={590} height={340} src={images[2]} alt="image_1"/>
             </div>
             <div className="box_13 flex-row justify-between">
 
                 <Image width={285} height={320} src={images[3]} alt="image_1"/>
-                <Image style={{marginLeft: 20}}  width={285} height={320} src={images[3]} alt="image_1"/>
-                <Image style={{marginLeft: 20}}  width={285} height={320} src={images[4]} alt="image_1"/>
-                <Image style={{marginLeft: 20}}  width={285} height={320} src={images[5]} alt="image_1"/>
+                <Image style={{marginLeft: 20, borderRadius: '20px'}}  width={285} height={320} src={images[3]} alt="image_1"/>
+                <Image style={{marginLeft: 20, borderRadius: '20px'}}  width={285} height={320} src={images[4]} alt="image_1"/>
+                <Image style={{marginLeft: 20, borderRadius: '20px'}}  width={285} height={320} src={images[5]} alt="image_1"/>
 
             </div>
         </div>

@@ -10,9 +10,9 @@ export default function CasesDetail({ slug }: CasesDetailProps) {
     const minTitle = `这里是一句副文案啊啊啊啊啊哈哈哈`;
 
     const images = [
-        '/images/cases_detail.png',
-        '/images/cases_detail.png',
-        '/images/cases_detail.png',
+        '/images/home/轮播图.png',
+        '/images/home/轮播图.png',
+        '/images/home/轮播图.png',
     ];
 
     return (
@@ -29,7 +29,7 @@ export default function CasesDetail({ slug }: CasesDetailProps) {
                             alt={`案例图${index + 1}`} // 更具体的描述
                             width="960"
                             style={{
-                                borderRadius: '20px',
+                                // borderRadius: '20px',
                                 marginBottom: index === images.length - 1 ? '20px' : '0px'
                             }}
                         />

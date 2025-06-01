@@ -8,11 +8,11 @@ import { useState } from 'react';
 
 export default function Cases() {
     const categories = [
-        { id: 1, name: '分类1哈哈', cases: [{ id: 1, image: '/images/cases1.png' }, { id: 2, image: '/images/cases1.png' }, { id: 3, image: '/images/cases1.png' }] },
-        { id: 2, name: '分类2哈哈', cases: [{ id: 5, image: '/images/cases1.png' }, { id: 6, image: '/images/cases1.png' }] },
-        { id: 3, name: '分类3哈哈', cases: [{ id: 7, image: '/images/cases1.png' }, { id: 8, image: '/images/cases1.png' }, { id: 9, image: '/images/cases1.png' }, { id: 14, image: '/images/cases1.png' }] },
-        { id: 4, name: '分类4哈哈', cases: [{ id: 10, image: '/images/cases1.png' }, { id: 11, image: '/images/cases1.png' }] },
-        { id: 5, name: '分类5哈哈', cases: [{ id: 13, image: '/images/cases1.png' }] },
+        { id: 1, name: '分类1哈哈', cases: [{ id: 1, image: '/images/home/2.png' }, { id: 2, image: '/images/home/1.png' }, { id: 3, image: '/images/home/1.png' }] },
+        { id: 2, name: '分类2哈哈', cases: [{ id: 5, image: '/images/home/2.png' }, { id: 6, image: '/images/home/1.png' }] },
+        { id: 3, name: '分类3哈哈', cases: [{ id: 7, image: '/images/home/2.png' }, { id: 8, image: '/images/home/1.png' }, { id: 9, image: '/images/home/1.png' }, { id: 14, image: '/images/home/1.png' }] },
+        { id: 4, name: '分类4哈哈', cases: [{ id: 10, image: '/images/home/2.png' }, { id: 11, image: '/images/home/1.png' }] },
+        { id: 5, name: '分类5哈哈', cases: [{ id: 13, image: '/images/home/2.png' }] },
     ];
 
     const [selectedCategoryId, setSelectedCategoryId] = useState<number>(categories[0].id);
