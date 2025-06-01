@@ -2,6 +2,16 @@
 
 # 部署脚本，需在 root 权限下运行
 
+echo "检查 80 端口是否被占用..."
+pid=$(lsof -t -i:80)
+if [ -n "$pid" ]; then
+  echo "80 端口被进程 $pid 占用，正在关闭..."
+  kill -9 $pid
+  echo "已关闭占用 80 端口的进程。"
+else
+  echo "80 端口未被占用。"
+fi
+
 echo "安装依赖..."
 npm install
 
