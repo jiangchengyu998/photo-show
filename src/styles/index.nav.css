@@ -4,10 +4,11 @@
     background-color: white;
     background-size: 100% 100%;
     width: 1440px;
+    border-bottom: #efe9e9 1px solid;
 }
 
 .nav_box {
-    background-color: rgba(255, 255, 255, 1);
+    /*background-color: rgba(255, 255, 255, 1);*/
     width: 481px;
     height: 25px;
     margin: 23px 0 0 480px;
