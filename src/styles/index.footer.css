@@ -1,0 +1,7 @@
+.footer_parent {
+    height: 68px;
+    background-color: rgba(255, 255, 255, 1);
+    background-size: 100% 100%;
+    width: 1440px;
+    border-top: #efe9e9 1px solid;
+}

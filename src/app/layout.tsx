@@ -29,7 +29,7 @@ export default function RootLayout({
     <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
-    <div className="grid grid-rows-[68px_1fr_98px] min-h-screen">
+    <div className="grid grid-rows-[68px_1fr_68px] min-h-screen">
         <div className="bg-gray-100 flex items-center justify-center">
             <Nav/>
         </div>
