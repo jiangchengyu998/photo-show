@@ -16,27 +16,12 @@ export default function Home() {
     ];
 
     const infos = [
-        {
-            title: '营业时间',
-            content: '8:00-22:00',
-            image: '/images/home-page.png',
-        },
-        {
-            title: '微信',
-            content: '一言家庭摄影',
-            image: '/images/home-page.png',
-        },
-        {
-            title: '服务热线',
-            content: '18825051395',
-            image: '/images/home-page.png',
-        },
-        {
-            title: ' 小红书',
-            content: '黎啦啦啦',
-            image: '/images/home-page.png',
-        }
-        ];
+        {title: '营业时间', content: '8:00-22:00', image: '/images/home-page.png',},
+        {title: '微信', content: '一言家庭摄影', image: '/images/home-page.png',},
+        {title: '服务热线', content: '18825051395', image: '/images/home-page.png',},
+        {title: ' 小红书', content: '黎啦啦啦', image: '/images/home-page.png',}
+    ];
+
     return (
         <div className="page flex-col">
             <Image width={1440} height={500} src={images[0].src} alt={"home-page"}/>
@@ -83,13 +68,22 @@ export default function Home() {
                 <span className="text_7">让照片讲述你们的故事，让回忆永远鲜活</span>
             </div>
             <div className="box_12 flex-row justify-between">
-                <Image style={{borderRadius: '20px'}} width={590} height={340} src={images[1].src} alt="image_1"/>
-                <Image style={{borderRadius: '20px'}} width={590} height={340} src={images[2].src} alt="image_1"/>
+                {
+                    images.slice(1, 3).map((image, index) => (
+                        <div key={index}>
+                            <Image style={{borderRadius: '20px'}} width={590} height={340} src={image.src} alt={`image_${index + 1}`}/>
+                        </div>
+                    ))
+                }
             </div>
             <div className="box_13 flex-row justify-between">
-                {[3,4,5,6].map((idx) => (
-                    <Image key={idx} style={{marginLeft: 20, borderRadius: '20px'}}  width={285} height={320} src={images[idx].src} alt="image_1"/>
-                ))}
+                {
+                    images.slice(3, 7).map((image, index) => (
+                        <div key={index}>
+                            <Image style={{borderRadius: '20px'}}  width={285} height={320} src={image.src} alt={`image_${index + 1}`}/>
+                        </div>
+                    ))
+                }
             </div>
         </div>
     );
