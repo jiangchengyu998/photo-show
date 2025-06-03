@@ -1,3 +1,4 @@
+'use client'
 import '@/styles/index.home.css'
 import '@/styles/common.css'
 import Image from 'next/image'
@@ -5,13 +6,13 @@ import Image from 'next/image'
 export default function Home() {
     //  获取首页的图片
     const images = [
-        '/images/home/轮播图.png',
-        '/images/home/1.png',
-        '/images/home/2.png',
-        '/images/home/3.png',
-        '/images/home/4.png',
-        '/images/home/5.png',
-        '/images/home/6.png',
+        {"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/轮播图.png"},
+        {"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/1.png"},
+        {"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/2.png"},
+        {"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/3.png"},
+        {"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/4.png"},
+        {"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/5.png"},
+        {"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/6.png"},
     ];
 
     const infos = [
@@ -38,7 +39,7 @@ export default function Home() {
         ];
     return (
         <div className="page flex-col">
-            <Image width={1440} height={500} src={images[0]} alt={"home-page"}/>
+            <Image width={1440} height={500} src={images[0].src} alt={"home-page"}/>
             <div className="box_9 flex-row">
                 <div className="block_1 flex-col">
                     <div className="block_2 flex-col"/>
@@ -82,16 +83,13 @@ export default function Home() {
                 <span className="text_7">让照片讲述你们的故事，让回忆永远鲜活</span>
             </div>
             <div className="box_12 flex-row justify-between">
-                <Image style={{borderRadius: '20px'}} width={590} height={340} src={images[1]} alt="image_1"/>
-                <Image style={{borderRadius: '20px'}} width={590} height={340} src={images[2]} alt="image_1"/>
+                <Image style={{borderRadius: '20px'}} width={590} height={340} src={images[1].src} alt="image_1"/>
+                <Image style={{borderRadius: '20px'}} width={590} height={340} src={images[2].src} alt="image_1"/>
             </div>
             <div className="box_13 flex-row justify-between">
-
-                <Image width={285} height={320} src={images[3]} alt="image_1"/>
-                <Image style={{marginLeft: 20, borderRadius: '20px'}}  width={285} height={320} src={images[3]} alt="image_1"/>
-                <Image style={{marginLeft: 20, borderRadius: '20px'}}  width={285} height={320} src={images[4]} alt="image_1"/>
-                <Image style={{marginLeft: 20, borderRadius: '20px'}}  width={285} height={320} src={images[5]} alt="image_1"/>
-
+                {[3,4,5,6].map((idx) => (
+                    <Image key={idx} style={{marginLeft: 20, borderRadius: '20px'}}  width={285} height={320} src={images[idx].src} alt="image_1"/>
+                ))}
             </div>
         </div>
     );
