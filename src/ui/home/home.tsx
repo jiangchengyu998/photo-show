@@ -70,16 +70,27 @@ export default function Home() {
             <div className="box_12 flex-row justify-between">
                 {
                     images.slice(1, 3).map((image, index) => (
-                        <div key={index}>
-                            <Image style={{borderRadius: '20px'}} width={590} height={340} src={image.src}
-                                   alt={`image_${index + 1}`}/>
-                        </div>
-                    ))
-                }
-            </div>
-            <div className="box_13 flex-row justify-between">
-                {
-                    images.slice(3, 7).map((image, index) => (
+
+                    <div className="image-hover-wrapper" key={index} style={{width: 590, height: 340}}>
+                    <Image
+                        className="image-hover-img"
+                        style={{borderRadius: '20px'}}
+                        width={590}
+                        height={340}
+                        src={image.src}
+                        alt={`image_${index + 1}`}
+                    />
+                    <div className="hover-info">
+                        <div className="hover-title">{image.title}</div>
+                        <div className="hover-content">{image.cotent}</div>
+                    </div>
+                </div>
+            ))
+            }
+        </div>
+    <div className="box_13 flex-row justify-between">
+        {
+            images.slice(3, 7).map((image, index) => (
                         <div className="image-hover-wrapper" key={index} style={{width: 285, height: 320}}>
                             <Image
                                 className="image-hover-img"
