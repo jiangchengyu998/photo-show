@@ -70,7 +70,7 @@ export default function Home() {
             <div className="box_12 flex-row justify-between">
                 {
                     images.slice(1, 3).map((image) => (
-                        <div className="image-hover-wrapper" key={image.id} style={{width: 590, height: 340}}
+                        <div className="image-hover-wrapper" key={image.id} style={{width: 590, height: 340, cursor: 'pointer'}}
                             onClick={() => {
                                 window.location.href = `/cases/${image.id}` // 强制跳转 + 刷新
                             }}>
@@ -94,7 +94,7 @@ export default function Home() {
     <div className="box_13 flex-row justify-between">
         {
             images.slice(3, 7).map((image, index) => (
-                        <div className="image-hover-wrapper" key={image.id} style={{width: 285, height: 320}}
+                        <div className="image-hover-wrapper" key={image.id} style={{width: 285, height: 320, cursor: 'pointer'}}
                              onClick={() => {
                                  window.location.href = `/cases/${image.id}` // 强制跳转 + 刷新
                              }}>
