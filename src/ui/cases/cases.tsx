@@ -52,7 +52,7 @@ export default function Cases() {
                                 />
                                 <div className="hover-info">
                                     <div className="hover-title">{image.title}</div>
-                                    <div className="hover-content">{image.title}</div>
+                                    <div className="hover-content">{image.content}</div>
                                 </div>
                             </div>
                         </Link>
