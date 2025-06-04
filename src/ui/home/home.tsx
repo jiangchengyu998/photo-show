@@ -70,24 +70,26 @@ export default function Home() {
             </div>
             <div className="box_12 flex-row justify-between">
                 {
-                    images.slice(1, 3).map((image, index) => (
+                    images.slice(1, 3).map((image) => (
+                        <Link key={image.id} href={`/home/${image.id}`}>
+                            <div className="image-hover-wrapper" key={image.id} style={{width: 590, height: 340}}>
+                                <Image
+                                    className="image-hover-img"
+                                    style={{borderRadius: '20px'}}
+                                    width={590}
+                                    height={340}
+                                    src={image.image}
+                                    alt={`image_${image.id + 1}`}
+                                />
+                                <div className="hover-info">
+                                    <div className="hover-title">{image.title}</div>
+                                    <div className="hover-content">{image.title}</div>
+                                </div>
+                            </div>
+                        </Link>
 
-                    <div className="image-hover-wrapper" key={index} style={{width: 590, height: 340}}>
-                    <Image
-                        className="image-hover-img"
-                        style={{borderRadius: '20px'}}
-                        width={590}
-                        height={340}
-                        src={image.image}
-                        alt={`image_${index + 1}`}
-                    />
-                    <div className="hover-info">
-                        <div className="hover-title">{image.title}</div>
-                        <div className="hover-content">{image.content}</div>
-                    </div>
-                </div>
-            ))
-            }
+                    ))
+                }
         </div>
     <div className="box_13 flex-row justify-between">
         {

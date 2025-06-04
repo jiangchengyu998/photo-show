@@ -8,11 +8,11 @@ import { useState } from 'react';
 
 export default function Cases() {
     const categories = [
-        { id: 1, name: '分类1哈哈', cases: [{ id: 1,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊",  image: '/images/home/2.png' }, { id: 2,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊",  image: '/images/home/1.png' }, { id: 3,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊",  image: '/images/home/1.png' }] },
-        { id: 2, name: '分类2哈哈', cases: [{ id: 5,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊",  image: '/images/home/2.png' }, { id: 6,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊",  image: '/images/home/1.png' }] },
-        { id: 3, name: '分类3哈哈', cases: [{ id: 7,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊",  image: '/images/home/2.png' }, { id: 8,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊",  image: '/images/home/1.png' }, { id: 9,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊",  image: '/images/home/1.png' }, { id: 14,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊",  image: '/images/home/1.png' }] },
-        { id: 4, name: '分类4哈哈', cases: [{ id: 10,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊",  image: '/images/home/2.png' }, { id: 11,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊",  image: '/images/home/1.png' }] },
-        { id: 5, name: '分类5哈哈', cases: [{ id: 13,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊",  image: '/images/home/2.png' }] },
+        { id: 1, name: '分类1哈哈', cases: [{ id: 1,"title": "主标题不超过15个字啊",content: "啊啊啊啊啊",  image: '/images/home/2.png' }, { id: 2,"title": "主标题不超过15个字啊",content: "啊啊啊啊啊",  image: '/images/home/1.png' }, { id: 3,"title": "主标题不超过15个字啊",content: "啊啊啊啊啊",  image: '/images/home/1.png' }] },
+        { id: 2, name: '分类2哈哈', cases: [{ id: 5,"title": "主标题不超过15个字啊",content: "啊啊啊啊啊",  image: '/images/home/2.png' }, { id: 6,"title": "主标题不超过15个字啊",content: "啊啊啊啊啊",  image: '/images/home/1.png' }] },
+        { id: 3, name: '分类3哈哈', cases: [{ id: 7,"title": "主标题不超过15个字啊",content: "啊啊啊啊啊",  image: '/images/home/2.png' }, { id: 8,"title": "主标题不超过15个字啊",content: "啊啊啊啊啊",  image: '/images/home/1.png' }, { id: 9,"title": "主标题不超过15个字啊",content: "啊啊啊啊啊",  image: '/images/home/1.png' }, { id: 14,"title": "主标题不超过15个字啊",content: "啊啊啊啊啊",  image: '/images/home/1.png' }] },
+        { id: 4, name: '分类4哈哈', cases: [{ id: 10,"title": "主标题不超过15个字啊",content: "啊啊啊啊啊",  image: '/images/home/2.png' }, { id: 11,"title": "主标题不超过15个字啊",content: "啊啊啊啊啊",  image: '/images/home/1.png' }] },
+        { id: 5, name: '分类5哈哈', cases: [{ id: 13,"title": "主标题不超过15个字啊",content: "啊啊啊啊啊",  image: '/images/home/2.png' }] },
     ];
 
     const [selectedCategoryId, setSelectedCategoryId] = useState<number>(categories[0].id);
@@ -39,15 +39,22 @@ export default function Cases() {
 
                 {/* 当前分类下的图片展示 */}
                 <div className="cases_content flex-row justify-between flex-wrap gap-4">
-                    {currentCategory?.cases.map(item => (
-                        <Link key={item.id} href={`/cases/${item.id}`}>
-                            <Image
-                                style={{ borderRadius: '20px' }}
-                                width={480}
-                                height={280}
-                                src={item.image}
-                                alt={`案例 ${item.id}`}
-                            />
+                    {currentCategory?.cases.map(image => (
+                        <Link key={image.id} href={`/cases/${image.id}`}>
+                            <div className="image-hover-wrapper" key={image.id} style={{width: 480, height: 280}}>
+                                <Image
+                                    className="image-hover-img"
+                                    style={{borderRadius: '20px'}}
+                                    width={480}
+                                    height={280}
+                                    src={image.image}
+                                    alt={`image_${image.id + 1}`}
+                                />
+                                <div className="hover-info">
+                                    <div className="hover-title">{image.title}</div>
+                                    <div className="hover-content">{image.title}</div>
+                                </div>
+                            </div>
                         </Link>
                     ))}
                 </div>
