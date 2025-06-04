@@ -2,7 +2,6 @@
 import '@/styles/index.home.css'
 import '@/styles/common.css'
 import Image from 'next/image'
-import Link from "next/link";
 
 export default function Home() {
     //  获取首页的图片
