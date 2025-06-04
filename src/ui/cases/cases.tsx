@@ -8,11 +8,11 @@ import { useState } from 'react';
 
 export default function Cases() {
     const categories = [
-        { id: 1, name: '分类1哈哈', cases: [{ id: 1, image: '/images/home/2.png' }, { id: 2, image: '/images/home/1.png' }, { id: 3, image: '/images/home/1.png' }] },
-        { id: 2, name: '分类2哈哈', cases: [{ id: 5, image: '/images/home/2.png' }, { id: 6, image: '/images/home/1.png' }] },
-        { id: 3, name: '分类3哈哈', cases: [{ id: 7, image: '/images/home/2.png' }, { id: 8, image: '/images/home/1.png' }, { id: 9, image: '/images/home/1.png' }, { id: 14, image: '/images/home/1.png' }] },
-        { id: 4, name: '分类4哈哈', cases: [{ id: 10, image: '/images/home/2.png' }, { id: 11, image: '/images/home/1.png' }] },
-        { id: 5, name: '分类5哈哈', cases: [{ id: 13, image: '/images/home/2.png' }] },
+        { id: 1, name: '分类1哈哈', cases: [{ id: 1,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊",  image: '/images/home/2.png' }, { id: 2,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊",  image: '/images/home/1.png' }, { id: 3,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊",  image: '/images/home/1.png' }] },
+        { id: 2, name: '分类2哈哈', cases: [{ id: 5,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊",  image: '/images/home/2.png' }, { id: 6,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊",  image: '/images/home/1.png' }] },
+        { id: 3, name: '分类3哈哈', cases: [{ id: 7,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊",  image: '/images/home/2.png' }, { id: 8,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊",  image: '/images/home/1.png' }, { id: 9,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊",  image: '/images/home/1.png' }, { id: 14,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊",  image: '/images/home/1.png' }] },
+        { id: 4, name: '分类4哈哈', cases: [{ id: 10,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊",  image: '/images/home/2.png' }, { id: 11,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊",  image: '/images/home/1.png' }] },
+        { id: 5, name: '分类5哈哈', cases: [{ id: 13,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊",  image: '/images/home/2.png' }] },
     ];
 
     const [selectedCategoryId, setSelectedCategoryId] = useState<number>(categories[0].id);

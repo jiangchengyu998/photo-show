@@ -6,13 +6,13 @@ import Image from 'next/image'
 export default function Home() {
     //  获取首页的图片
     const images = [
-        {"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/轮播图.png"},
-        {"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/1.png"},
-        {"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/2.png"},
-        {"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/3.png"},
-        {"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/4.png"},
-        {"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/5.png"},
-        {"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/6.png"},
+        {id:1,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/轮播图.png"},
+        {id:2,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/1.png"},
+        {id:3,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/2.png"},
+        {id:4,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/3.png"},
+        {id:5,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/4.png"},
+        {id:6,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/5.png"},
+        {id:7,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/6.png"},
     ];
 
     const infos = [
