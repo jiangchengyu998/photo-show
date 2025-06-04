@@ -2,17 +2,18 @@
 import '@/styles/index.home.css'
 import '@/styles/common.css'
 import Image from 'next/image'
+import Link from "next/link";
 
 export default function Home() {
     //  获取首页的图片
     const images = [
-        {id:1,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/轮播图.png"},
-        {id:2,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/1.png"},
-        {id:3,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/2.png"},
-        {id:4,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/3.png"},
-        {id:5,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/4.png"},
-        {id:6,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/5.png"},
-        {id:7,"title": "主标题不超过15个字啊","cotent": "啊啊啊啊啊", "src": "/images/home/6.png"},
+        {id:1,title: "主标题不超过15个字啊",content: "啊啊啊啊啊", image: "/images/home/轮播图.png"},
+        {id:2,title: "主标题不超过15个字啊",content: "啊啊啊啊啊", image: "/images/home/1.png"},
+        {id:3,title: "主标题不超过15个字啊",content: "啊啊啊啊啊", image: "/images/home/2.png"},
+        {id:4,title: "主标题不超过15个字啊",content: "啊啊啊啊啊", image: "/images/home/3.png"},
+        {id:5,title: "主标题不超过15个字啊",content: "啊啊啊啊啊", image: "/images/home/4.png"},
+        {id:6,title: "主标题不超过15个字啊",content: "啊啊啊啊啊", image: "/images/home/5.png"},
+        {id:7,title: "主标题不超过15个字啊",content: "啊啊啊啊啊", image: "/images/home/6.png"},
     ];
 
     const infos = [
@@ -24,7 +25,7 @@ export default function Home() {
 
     return (
         <div className="page flex-col">
-            <Image width={1440} height={500} src={images[0].src} alt={"home-page"}/>
+            <Image width={1440} height={500} src={images[0].image} alt={"home-page"}/>
             <div className="box_9 flex-row">
                 <div className="block_1 flex-col">
                     <div className="block_2 flex-col"/>
@@ -77,12 +78,12 @@ export default function Home() {
                         style={{borderRadius: '20px'}}
                         width={590}
                         height={340}
-                        src={image.src}
+                        src={image.image}
                         alt={`image_${index + 1}`}
                     />
                     <div className="hover-info">
                         <div className="hover-title">{image.title}</div>
-                        <div className="hover-content">{image.cotent}</div>
+                        <div className="hover-content">{image.content}</div>
                     </div>
                 </div>
             ))
@@ -91,18 +92,18 @@ export default function Home() {
     <div className="box_13 flex-row justify-between">
         {
             images.slice(3, 7).map((image, index) => (
-                        <div className="image-hover-wrapper" key={index} style={{width: 285, height: 320}}>
+                        <div className="image-hover-wrapper" key={image.id} style={{width: 285, height: 320}}>
                             <Image
                                 className="image-hover-img"
                                 style={{borderRadius: '20px'}}
                                 width={285}
                                 height={320}
-                                src={image.src}
+                                src={image.image}
                                 alt={`image_${index + 4}`}
                             />
                             <div className="hover-info">
                                 <div className="hover-title">{image.title}</div>
-                                <div className="hover-content">{image.cotent}</div>
+                                <div className="hover-content">{image.content}</div>
                             </div>
                         </div>
                     ))
