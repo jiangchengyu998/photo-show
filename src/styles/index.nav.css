@@ -67,3 +67,7 @@
     width: 38px;
     height: 4px;
 }
+
+.nav-active {
+    font-weight: bold;
+}

@@ -35,21 +35,21 @@ export default function Nav() {
         <div className="nav_parent flex-col justify-end">
             <div className="nav_box flex-row justify-between">
                 <span
-                    className="nav_root"
+                    className={`${pathname === '/' ? ' nav-active' : ''}`}
                     onClick={() => handleNavClick('/')}
                     style={{cursor: 'pointer'}}
                 >
                   首页
                 </span>
                 <span
-                    className="nav_cases"
+                    className={`${activePath.startsWith('/cases') ? ' nav-active' : ''}`}
                     onClick={() => handleNavClick('/cases')}
                     style={{cursor: 'pointer'}}
                 >
                  客户案例
                 </span>
                 <span
-                    className="nav_about"
+                    className={`${activePath.startsWith('/about') ? ' nav-active' : ''}`}
                     onClick={() => handleNavClick('/about')}
                     style={{cursor: 'pointer'}}
                 >
