@@ -1,6 +1,6 @@
 .cases_box1 {
     width: 1440px;
-    min-height: 1100px; /* 设置最小高度为1200px */
+    min-height: 1200px; /* 设置最小高度为1200px */
     margin-bottom: 1px;
     margin-top: 32px;
 }
@@ -67,7 +67,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 980px;
-    height: 280px;
+    /*height: 280px;*/
     gap: 20px; /* 行间距、列间距都一致 */
 }
 

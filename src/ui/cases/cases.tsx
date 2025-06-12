@@ -57,7 +57,7 @@ export default function Cases() {
                 </div>
 
                 {/* 当前分类下的图片展示 */}
-                <div className="cases_content flex-row justify-between flex-wrap gap-4">
+                <div className="cases_content flex-row justify-between gap-4">
                     {currentCategory?.cases.map((image: Case) => (
                         <Link key={image.id} href={`/cases/${image.id}`}>
                             <div className="image-hover-wrapper" key={image.id} style={{width: 480, height: 280}}>

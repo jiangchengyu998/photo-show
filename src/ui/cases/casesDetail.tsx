@@ -13,6 +13,13 @@ export default function CasesDetail({ slug }: CasesDetailProps) {
         '/images/home/轮播图.png',
         '/images/home/轮播图.png',
         '/images/home/轮播图.png',
+        '/images/home/轮播图.png',
+        '/images/home/轮播图.png',
+        '/images/home/轮播图.png',
+        '/images/home/轮播图.png',
+        '/images/home/轮播图.png',
+        '/images/home/轮播图.png',
+        '/images/home/轮播图.png',
     ];
 
     return (
