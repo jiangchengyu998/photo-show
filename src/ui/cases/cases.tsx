@@ -4,20 +4,39 @@ import '@/styles/index.cases.css';
 import '@/styles/common.css';
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from 'react';
+import {useEffect, useState} from 'react';
+
+type Case = {
+    id: number;
+    title: string;
+    content: string;
+    image: string;
+};
+type Category = {
+    id: number;
+    name: string;
+    cases: Case[];
+};
 
 export default function Cases() {
-    const categories = [
-        { id: 1, name: '分类1哈哈', cases: [{ id: 1,"title": "主标题不超过15个字啊",content: "啊啊啊啊啊",  image: '/images/home/2.png' }, { id: 2,"title": "主标题不超过15个字啊",content: "啊啊啊啊啊",  image: '/images/home/1.png' }, { id: 3,"title": "主标题不超过15个字啊",content: "啊啊啊啊啊",  image: '/images/home/1.png' }] },
-        { id: 2, name: '分类2哈哈', cases: [{ id: 5,"title": "主标题不超过15个字啊",content: "啊啊啊啊啊",  image: '/images/home/2.png' }, { id: 6,"title": "主标题不超过15个字啊",content: "啊啊啊啊啊",  image: '/images/home/1.png' }] },
-        { id: 3, name: '分类3哈哈', cases: [{ id: 7,"title": "主标题不超过15个字啊",content: "啊啊啊啊啊",  image: '/images/home/2.png' }, { id: 8,"title": "主标题不超过15个字啊",content: "啊啊啊啊啊",  image: '/images/home/1.png' }, { id: 9,"title": "主标题不超过15个字啊",content: "啊啊啊啊啊",  image: '/images/home/1.png' }, { id: 14,"title": "主标题不超过15个字啊",content: "啊啊啊啊啊",  image: '/images/home/1.png' }] },
-        { id: 4, name: '分类4哈哈', cases: [{ id: 10,"title": "主标题不超过15个字啊",content: "啊啊啊啊啊",  image: '/images/home/2.png' }, { id: 11,"title": "主标题不超过15个字啊",content: "啊啊啊啊啊",  image: '/images/home/1.png' }] },
-        { id: 5, name: '分类5哈哈', cases: [{ id: 13,"title": "主标题不超过15个字啊",content: "啊啊啊啊啊",  image: '/images/home/2.png' }] },
-    ];
+    const [types, setTypes] = useState<Category[]>([]);
+    const [selectedCategoryId, setSelectedCategoryId] = useState<number | undefined>(undefined);
 
-    const [selectedCategoryId, setSelectedCategoryId] = useState<number>(categories[0].id);
+    useEffect(() => {
+        fetch('/api/types')
+            .then(res => res.json())
+            .then(data => {
+                setTypes(data);
+            });
+    }, []);
 
-    const currentCategory = categories.find(cat => cat.id === selectedCategoryId);
+    useEffect(() => {
+        if (types.length > 0 && selectedCategoryId === undefined) {
+            setSelectedCategoryId(types[0].id);
+        }
+    }, [types, selectedCategoryId]);
+
+    const currentCategory = types.find(cat => cat.id === selectedCategoryId);
 
     return (
         <div className="page flex-col">
@@ -25,7 +44,7 @@ export default function Cases() {
                 {/* 分类导航栏 */}
                 <div className="cat_nav flex-row">
                     <div className="group_5 flex-col justify-between">
-                        {categories.map((cat) => (
+                        {types.map((cat) => (
                             <div
                                 key={cat.id}
                                 onClick={() => setSelectedCategoryId(cat.id)}
@@ -39,7 +58,7 @@ export default function Cases() {
 
                 {/* 当前分类下的图片展示 */}
                 <div className="cases_content flex-row justify-between flex-wrap gap-4">
-                    {currentCategory?.cases.map(image => (
+                    {currentCategory?.cases.map((image: Case) => (
                         <Link key={image.id} href={`/cases/${image.id}`}>
                             <div className="image-hover-wrapper" key={image.id} style={{width: 480, height: 280}}>
                                 <Image
